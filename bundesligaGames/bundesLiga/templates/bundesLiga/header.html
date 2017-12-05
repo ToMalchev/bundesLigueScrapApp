@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ligue View</title>
+         {% load staticfiles %}
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'information/css/bootstrap.min.css' %}" type = "text/css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'information/css/business-casual.css' %}" type = "text/css"/>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ 
+    <script src="jquery-3.2.1.min.js"></script>
+
+</head>
+<body  class='body'>
+  
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        
+         
+
+         <div class="collapse navbar-collapse in" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav">
+             <li><a data-toggle="collapse" data-target=".in" href="/">Bundesliga - teams ranking</a></li>
+             <li><a data-toggle="collapse" data-target=".in" href="/thisWeekendMatches/">Matches(games) this weekend</a></li>
+             <li><a data-toggle="collapse" data-target=".in" href="/allMatches/">All the games this season</a></li>
+             <li><a data-toggle="collapse" data-target=".in" href="/SearchTeam/">Search for a specific team</a></li>
+           </ul>
+         </div>     
+        
+      </div>
+    </nav>
+
+{% block content %}
+
+{% endblock %} 
+</body>
+</html>

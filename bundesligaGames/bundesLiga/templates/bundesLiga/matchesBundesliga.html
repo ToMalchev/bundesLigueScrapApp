@@ -1,0 +1,21 @@
+{% extends "bundesLiga/header.html" %}
+
+{% block content %}
+<div style="margin-left: 5%;">
+	<h4>Games/matches</h4>
+	<br>
+    <ul>
+        <div style="font-size: 1.2em;">
+
+{% for i in matches %}
+
+  
+	<li>{{ i.team1 }} - {{ i.team2 }} : {{ i.goals_team1 }} - {{ i.goals_team2 }} ( {{i.date}} )</li>
+  
+{% endfor %} 
+         </div>
+	</ul>
+</div>
+<p>{{ first }}</p>
+
+{% endblock %}

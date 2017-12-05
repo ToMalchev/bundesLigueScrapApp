@@ -1,0 +1,30 @@
+{% extends "bundesLiga/header.html" %}
+
+{% block content %}
+
+<div style="margin-left: 5%;">
+<h5>Type the name of the team </h5>
+    
+   <form method="POST">
+     {% csrf_token %}
+
+    <input type="text" name="team_name" value="">
+       <button type="submit" value="Submit">Search</button>
+  </form>
+<br>
+<br>
+<br>
+
+    <div style="font-size: 1.5em;">
+
+{% for i in teams %}
+
+  
+    {{ i.name }}  {{ i.points }}  {{ i.win }}  {{ i.loss }}  {{i.draws}}
+    <br>
+  
+{% endfor %} 
+	</div>
+</div>
+
+{% endblock %}
