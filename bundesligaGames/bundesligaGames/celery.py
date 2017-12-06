@@ -10,7 +10,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bundesligaGames.settings')
 django.setup()
 # Load task modules from all registered Django app configs.
 
-app = Celery('bundesligaGames')
+app = Celery('bundesligaGames', broker='redis://localhost:6379/')
 app.config_from_object('django.conf:settings', namespace='celery')
 
 
