@@ -5,7 +5,7 @@ import django
 import requests
 #from bs4 import BeautifulSoup
 import json
-absolute_import from __future__
+
 
 
 sys.path.append(os.path.realpath(os.path.join(os.path.dirname(__file__), 'bundesligaGames/')))
