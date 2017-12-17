@@ -12,6 +12,7 @@ redis
 Instalation:
 
   Django using pip:
+  
     pip3 install django 
   
   postgreSQL:
@@ -21,6 +22,7 @@ Instalation:
     
 
   celery and redis:
+  
     pip3 install Celery
     brew install redis
     pip3 install -U "celery[redis]"
@@ -34,3 +36,4 @@ Decelopment setup:
       CREATE USER scrapera WITH PASSWORD 'scraperDB';
       GRANT ALL PRIVILEGES ON DATABASE scrapinggames TO scrapera;
     
+The project can be run either with celery and redis or running scraper.py from the terminal.
