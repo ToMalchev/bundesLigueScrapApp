@@ -36,4 +36,4 @@ Decelopment setup:
       CREATE USER scrapera WITH PASSWORD 'scraperDB';
       GRANT ALL PRIVILEGES ON DATABASE scrapinggames TO scrapera;
     
-The project can be run either with celery and redis or running scraper.py from the terminal.
+The project can be run either with celery and redis or run scraper.py from the terminal.
